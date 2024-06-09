@@ -1,0 +1,54 @@
+/* Carousel slide images */
+.slick-slide img {
+width: 100%; /* Make the image width responsive */
+height: auto; /* Maintain aspect ratio */
+max-width: 500px; /* Set maximum width */
+max-height: 500px; /* Set maximum height */
+object-fit: cover;
+}
+
+/* Carousel container */
+.carousel-container {
+margin-top: 20px;
+transition: box-shadow 0.5s ease-in-out;
+}
+
+.carousel-container:hover {
+box-shadow: 2px 5px 5px rgba(63, 61, 61, 0.3);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+.slick-slide img {
+    max-width: 400px;
+    max-height: 400px;
+}
+}
+
+@media (max-width: 992px) {
+.slick-slide img {
+    max-width: 300px;
+    max-height: 300px;
+}
+}
+
+@media (max-width: 768px) {
+.slick-slide img {
+    max-width: 250px;
+    max-height: 250px;
+}
+}
+
+@media (max-width: 576px) {
+.slick-slide img {
+    max-width: 200px;
+    max-height: 200px;
+}
+}
+
+@media (max-width: 400px) {
+.slick-slide img {
+    max-width: 150px;
+    max-height: 150px;
+}
+}

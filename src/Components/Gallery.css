@@ -1,0 +1,92 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 60px; /* Reduced gap between categories */
+}
+
+/* Category */
+.category {
+    border-bottom: 1px solid #3877ca; /* Add border between categories */
+}
+
+.category h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #3877ca;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Photos */
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add reasonable gap between photos */
+}
+
+/* Photo */
+.photo {
+    position: relative;
+    flex: 1;
+    overflow: hidden; /* Hide overflow to prevent hover effect from extending beyond photo */
+    text-decoration: none; /* Remove underline from link */
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hover effect for big photos */
+.big-photo .hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: orangered;
+    font-size: 16px;
+    padding: 10px;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.big-photo:hover .hover-text {
+    opacity: 1; /* Show on hover */
+}
+
+/* Hover effect for small photos */
+.small-photo .hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(59, 126, 226, 0.7); /* Semi-transparent white background */
+    color: #000;
+    font-size: 14px;
+    padding: 10px;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.small-photo:hover .hover-text {
+    opacity: 1; /* Show on hover */
+}
+
+/* Additional hover effects for small photos */
+.small-photo:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease;
+}
+
+/* Click effect */
+.small-photo:active img {
+    transform: scale(0.95); /* Slight shrink effect on click */
+    transition: transform 0.1s ease;
+}

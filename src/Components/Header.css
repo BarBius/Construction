@@ -1,0 +1,52 @@
+/* Header container */
+header {
+  display: flex;
+  justify-content: center; /* Center the navigation horizontally */
+  align-items: center; /* Center items vertically */
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #333;
+  height: 80px; /* Set a fixed height for the header */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+/* Navbar container */
+.navigation {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Make the navigation span the full width of the header */
+}
+
+/* Navbar links */
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox for horizontal layout */
+  align-items: center; /* Center items vertically */
+}
+
+.navigation ul li {
+  margin-right: 20px; /* Add margin between each navbar item */
+}
+
+.navigation ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  line-height: 25px; /* Ensure consistent height */
+}
+
+/* Navbar button hover effect */
+.navigation ul li a:hover {
+  background-color: #777;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
+}
+
+
+
